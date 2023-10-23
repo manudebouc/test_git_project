@@ -1,0 +1,345 @@
+{
+  "metadata": {
+    "asset_type": "do_scenario_asset",
+    "name": "Scenario 1",
+    "description": null,
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2023-10-23T09:39:58Z",
+    "created": 1698053998624,
+    "asset_id": "do_scenario_asset.Scenario1",
+    "asset_attributes": [
+      "do_scenario_asset",
+      "do_solve_asset"
+    ]
+  },
+  "entity": {
+    "do_scenario_asset": {
+      "parentId": "test",
+      "category": "scenario",
+      "tables": {
+        "diet_food": {
+          "category": "input",
+          "lineage": "Copied from diet_food[data_asset.dietfoodcsv:table]",
+          "creator": "1000330999",
+          "createdAt": 1698054033389,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054033389,
+          "crc": 2319942041,
+          "size": 235,
+          "attachmentKey": "6c0c6131-1a3c-4688-819b-11ee7f20072a/1698054033389",
+          "name": "diet_food",
+          "tableType": {
+            "columns": [
+              {
+                "key": "name",
+                "dataType": "String"
+              },
+              {
+                "key": "unit_cost",
+                "dataType": "Number"
+              },
+              {
+                "key": "qmin",
+                "dataType": "Number"
+              },
+              {
+                "key": "qmax",
+                "dataType": "Number"
+              }
+            ]
+          },
+          "numberOfRows": 9
+        },
+        "diet_food_nutrients": {
+          "category": "input",
+          "lineage": "Copied from diet_food_nutrients[data_asset.dietfoodnutrientscsv:table]",
+          "creator": "1000330999",
+          "createdAt": 1698054033389,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054033389,
+          "crc": 4171599506,
+          "size": 417,
+          "attachmentKey": "21433534-204a-41df-bccb-755e0c5e1a19/1698054033389",
+          "name": "diet_food_nutrients",
+          "tableType": {
+            "columns": [
+              {
+                "key": "Food",
+                "dataType": "String"
+              },
+              {
+                "key": "Calories",
+                "dataType": "Number"
+              },
+              {
+                "key": "Calcium",
+                "dataType": "Number"
+              },
+              {
+                "key": "Iron",
+                "dataType": "Number"
+              },
+              {
+                "key": "Vit_A",
+                "dataType": "Number"
+              },
+              {
+                "key": "Dietary_Fiber",
+                "dataType": "Number"
+              },
+              {
+                "key": "Carbohydrates",
+                "dataType": "Number"
+              },
+              {
+                "key": "Protein",
+                "dataType": "Number"
+              }
+            ]
+          },
+          "numberOfRows": 9
+        },
+        "diet_nutrients": {
+          "category": "input",
+          "lineage": "Copied from diet_nutrients[data_asset.dietnutrientscsv:table]",
+          "creator": "1000330999",
+          "createdAt": 1698054033389,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054033389,
+          "crc": 1074773226,
+          "size": 127,
+          "attachmentKey": "53148857-46c0-44f6-ba5e-612249e84042/1698054033389",
+          "name": "diet_nutrients",
+          "tableType": {
+            "columns": [
+              {
+                "key": "name",
+                "dataType": "String"
+              },
+              {
+                "key": "qmin",
+                "dataType": "Number"
+              },
+              {
+                "key": "qmax",
+                "dataType": "Number"
+              }
+            ]
+          },
+          "numberOfRows": 7
+        },
+        "stats": {
+          "category": "output",
+          "creator": "1000330999",
+          "createdAt": 1698054087569,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054087569,
+          "crc": 2499753344,
+          "size": 325,
+          "attachmentKey": "34ee325b-bfa2-48b2-9436-8aae32b43b98/1698054087569",
+          "name": "stats",
+          "tableType": {
+            "columns": [
+              {
+                "key": "Name",
+                "dataType": "String"
+              },
+              {
+                "key": "Value",
+                "dataType": "String"
+              }
+            ]
+          },
+          "numberOfRows": 12
+        },
+        "solution": {
+          "category": "output",
+          "creator": "1000330999",
+          "createdAt": 1698054087569,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054087569,
+          "crc": 2642333671,
+          "size": 127,
+          "attachmentKey": "aa0172bd-e98f-4ca2-9936-35aeddd3d35e/1698054087569",
+          "name": "solution",
+          "tableType": {
+            "columns": [
+              {
+                "key": "name",
+                "dataType": "String"
+              },
+              {
+                "key": "value",
+                "dataType": "Number"
+              }
+            ]
+          },
+          "numberOfRows": 4
+        },
+        "kpis": {
+          "category": "output",
+          "creator": "1000330999",
+          "createdAt": 1698054087569,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054087569,
+          "crc": 2060603274,
+          "size": 264,
+          "attachmentKey": "6d0cfa6c-31ac-4f25-b201-20e9005909d3/1698054087569",
+          "name": "kpis",
+          "tableType": {
+            "columns": [
+              {
+                "key": "Name",
+                "dataType": "String"
+              },
+              {
+                "key": "Value",
+                "dataType": "Number"
+              }
+            ]
+          },
+          "numberOfRows": 8
+        }
+      },
+      "assets": {
+        "model.py": {
+          "category": "model",
+          "creator": "1000330999",
+          "createdAt": 1698054046854,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054046854,
+          "crc": 938526220,
+          "size": 1808,
+          "attachmentKey": "d799ebb9-46ca-49d2-90ae-43fe9ae2d567/1698054046854",
+          "name": "model.py",
+          "contentType": "text/plain"
+        },
+        "script2.py": {
+          "category": "model",
+          "creator": "1000330999",
+          "createdAt": 1698054048269,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054048269,
+          "crc": 3585950140,
+          "size": 170,
+          "attachmentKey": "9c9c90ad-b411-4db6-a519-854dc2820ea4/1698054048269",
+          "name": "script2.py",
+          "contentType": "text/plain"
+        },
+        "solution.json": {
+          "category": "output",
+          "creator": "1000330999",
+          "createdAt": 1698054087569,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054087569,
+          "crc": 85312902,
+          "size": 1004,
+          "attachmentKey": "8e98cad0-a4b4-4bf3-901c-e827393c1511/1698054087569",
+          "name": "solution.json",
+          "contentType": "application/json"
+        },
+        "log.txt": {
+          "category": "output",
+          "creator": "1000330999",
+          "createdAt": 1698054087569,
+          "lastUpdater": "1000330999",
+          "updatedAt": 1698054087569,
+          "crc": 34736043,
+          "size": 1364,
+          "attachmentKey": "cffd9770-e130-4bf3-951b-4ea763548b07/1698054087569",
+          "name": "log.txt",
+          "contentType": "text/plain"
+        }
+      },
+      "readOnly": false,
+      "qualifiers": [
+        {
+          "name": "isCognitive",
+          "value": "false"
+        }
+      ]
+    },
+    "do_solve_asset": {
+      "creationTime": 1698054054315,
+      "lastModificationTime": 1698054093419,
+      "state": "TERMINATED",
+      "solveConfig": {
+        "solveParameters": {}
+      },
+      "jobDetails": {
+        "id": "ab52b247-4016-4482-a819-63f747c13801",
+        "createdAt": 1698054060440,
+        "startedAt": 1698054085110,
+        "endedAt": 1698054087713,
+        "submittedAt": 1698054060440,
+        "details": {
+          "KPI.PROGRESS_CURRENT_OBJECTIVE": "2.6904091716962637",
+          "KPI.Total Calcium": "800.0000000000001",
+          "KPI.Total Calories": "2000.0",
+          "KPI.Total Carbohydrates": "256.80576358904455",
+          "KPI.Total Dietary_Fiber": "25.0",
+          "KPI.Total Iron": "11.278317739831891",
+          "KPI.Total Protein": "51.17372234135308",
+          "KPI.Total Vit_A": "8518.432542485823",
+          "MODEL_DETAIL_BOOLEAN_VARS": "0",
+          "MODEL_DETAIL_CONSTRAINTS": "7",
+          "MODEL_DETAIL_CONTINUOUS_VARS": "9",
+          "MODEL_DETAIL_INTEGER_VARS": "0",
+          "MODEL_DETAIL_KPIS": "[\"Total Calories\", \"Total Calcium\", \"Total Iron\", \"Total Vit_A\", \"Total Dietary_Fiber\", \"Total Carbohydrates\", \"Total Protein\"]",
+          "MODEL_DETAIL_NONZEROS": "57",
+          "MODEL_DETAIL_OBJECTIVE_SENSE": "minimize",
+          "MODEL_DETAIL_TYPE": "LP",
+          "PROGRESS_CURRENT_OBJECTIVE": "2.6904091716962637",
+          "PROGRESS_CURRENT_OBJECTIVE.history": "[[1698054087.47, 2.6904091716962637]]",
+          "STAT.cplex.modelType": "LP",
+          "STAT.cplex.size.booleanVariables": "0",
+          "STAT.cplex.size.constraints": "7",
+          "STAT.cplex.size.continousVariables": "9",
+          "STAT.cplex.size.integerVariables": "0",
+          "STAT.cplex.size.linearConstraints": "7",
+          "STAT.cplex.size.quadraticConstraints": "0",
+          "STAT.cplex.size.variables": "9",
+          "STAT.job.coresCount": "1",
+          "STAT.job.inputsReadMs": "1803",
+          "STAT.job.memoryPeakKB": "107136",
+          "STAT.job.modelProcessingMs": "419",
+          "STAT.job.outputsWriteMs": "152",
+          "latestOutputUpload": "2023-10-23T09:41:27.711Z"
+        },
+        "executionStatus": "PROCESSED",
+        "solveStatus": "OPTIMAL_SOLUTION",
+        "logTail": [
+          "[2023-10-23T09:41:26.953Z, WARNING] Python 3.10 is used as default with pandas 1.5.3 libraries.",
+          "[2023-10-23T09:41:27.069Z, INFO] {'diet_food.csv': {'name': 'str'}, 'diet_food_nutrients.csv': {'Food': 'str'}, 'diet_nutrients.csv': {'name': 'str'}}",
+          "[2023-10-23T09:41:27.185Z, INFO] hello from script 2!",
+          "[2023-10-23T09:41:27.187Z, INFO] CPLEX version 22.1.1.0",
+          "[2023-10-23T09:41:27.188Z, INFO] Python version 3.10.13 (main, Sep 11 2023, 13:21:10) [GCC 11.2.0]",
+          "[2023-10-23T09:41:27.456Z, INFO] Model: diet",
+          "[2023-10-23T09:41:27.458Z, INFO]  - number of variables: 9",
+          "[2023-10-23T09:41:27.459Z, INFO]    - binary=0, integer=0, continuous=9",
+          "[2023-10-23T09:41:27.460Z, INFO]  - number of constraints: 7",
+          "[2023-10-23T09:41:27.460Z, INFO]    - linear=7",
+          "[2023-10-23T09:41:27.461Z, INFO]  - parameters: defaults",
+          "[2023-10-23T09:41:27.462Z, INFO]  - objective: minimize",
+          "[2023-10-23T09:41:27.463Z, INFO]  - problem type is: LP",
+          "[2023-10-23T09:41:27.463Z, INFO] Warning: Model: \"diet\" is not a MIP problem, progress listeners are disabled",
+          "[2023-10-23T09:41:27.477Z, INFO] objective: 2.690",
+          "[2023-10-23T09:41:27.477Z, INFO] status: OPTIMAL_SOLUTION(2)",
+          "[2023-10-23T09:41:27.479Z, INFO]   \"Spaghetti W/ Sauce\"=2.155",
+          "[2023-10-23T09:41:27.487Z, INFO]   \"Chocolate Chip Cookies\"=10.000",
+          "[2023-10-23T09:41:27.489Z, INFO]   \"Lowfat Milk\"=1.831",
+          "[2023-10-23T09:41:27.490Z, INFO]   \"Hotdog\"=0.930"
+        ]
+      },
+      "taskSetupTime": 1698054060450,
+      "taskSolveTime": 1698054092419,
+      "taskTearDownTime": 1698054093419,
+      "jobSpaceId": "96a05454-0584-4b04-8030-3dd990479ccb",
+      "jobDeploymentId": "7fbd7665-2f3d-4ea8-9990-cb18e2c3c150",
+      "jobId": "ab52b247-4016-4482-a819-63f747c13801",
+      "ping": 1698054084488
+    }
+  },
+  "attachments": []
+}

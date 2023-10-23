@@ -1,0 +1,173 @@
+{
+  "entity": {
+    "wml_model": {
+      "custom": {
+        "decision_optimization": {
+          "oaas.docplex.python": "3.10"
+        }
+      },
+      "hybrid_pipeline_software_specs": [],
+      "software_spec": {
+        "base_id": "e51999ba-6452-5f1f-8287-17228b88b652",
+        "name": "do_22.1"
+      },
+      "ml_version": "4.0.19",
+      "type": "do-docplex_22.1",
+      "schemas": {
+        "input": [
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "unit_cost",
+                "type": "double"
+              },
+              {
+                "name": "qmin",
+                "type": "double"
+              },
+              {
+                "name": "qmax",
+                "type": "double"
+              }
+            ],
+            "id": "diet_food.csv"
+          },
+          {
+            "fields": [
+              {
+                "name": "Food",
+                "type": "string"
+              },
+              {
+                "name": "Calories",
+                "type": "double"
+              },
+              {
+                "name": "Calcium",
+                "type": "double"
+              },
+              {
+                "name": "Iron",
+                "type": "double"
+              },
+              {
+                "name": "Vit_A",
+                "type": "double"
+              },
+              {
+                "name": "Dietary_Fiber",
+                "type": "double"
+              },
+              {
+                "name": "Carbohydrates",
+                "type": "double"
+              },
+              {
+                "name": "Protein",
+                "type": "double"
+              }
+            ],
+            "id": "diet_food_nutrients.csv"
+          },
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "qmin",
+                "type": "double"
+              },
+              {
+                "name": "qmax",
+                "type": "double"
+              }
+            ],
+            "id": "diet_nutrients.csv"
+          }
+        ],
+        "output": [
+          {
+            "fields": [
+              {
+                "name": "Name",
+                "type": "string"
+              },
+              {
+                "name": "Value",
+                "type": "string"
+              }
+            ],
+            "id": "stats.csv"
+          },
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "value",
+                "type": "double"
+              }
+            ],
+            "id": "solution.csv"
+          },
+          {
+            "fields": [
+              {
+                "name": "Name",
+                "type": "string"
+              },
+              {
+                "name": "Value",
+                "type": "double"
+              }
+            ],
+            "id": "kpis.csv"
+          },
+          {
+            "fields": [],
+            "id": "solution.json"
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "name": "wml",
+    "asset_type": "wml_model",
+    "asset_category": "USER",
+    "resource_key": "1fa59554-7ace-485c-8d5b-f406a77281c2",
+    "origin_country": "US",
+    "description": "",
+    "tags": [
+      "python3.10"
+    ],
+    "created_at": "2023-10-23T09:42:08Z",
+    "created": 1698054128256,
+    "asset_id": "wml_model.b0d31b4f-2bf0-410a-b0c6-f9a409b4aadc",
+    "asset_attributes": [
+      "wml_model"
+    ]
+  },
+  "attachments": [
+    {
+      "asset_type": "wml_model",
+      "user_data": {
+        "content_format": "native"
+      },
+      "created_at": "2023-10-23T09:42:08Z",
+      "id": "60f7b0e7-3067-4df0-8364-3d07b7feef3a",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+cplex.size.integerVariables,0
+cplex.size.linearConstraints,7
+cplex.modelType,LP
+cplex.size.variables,9
+cplex.size.continousVariables,9
+job.inputsReadMs,1803
+cplex.size.booleanVariables,0
+job.coresCount,1
+cplex.size.quadraticConstraints,0
+cplex.size.constraints,7
+job.memoryPeakKB,107136
+job.modelProcessingMs,419

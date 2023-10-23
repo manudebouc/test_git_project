@@ -1,0 +1,8 @@
+import sys
+import cplex
+
+def hello():
+    print("hello from script 2!")
+    print("CPLEX version", cplex.__version__)
+    print("Python version", sys.version)
+    

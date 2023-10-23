@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "asset_type": "do_decision_asset",
+    "name": "test",
+    "description": "",
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2023-10-23T09:39:57Z",
+    "created": 1698053997442,
+    "asset_id": "do_decision_asset.test",
+    "asset_attributes": [
+      "do_decision_asset"
+    ]
+  },
+  "entity": {
+    "do_decision_asset": {
+      "spaceId": "96a05454-0584-4b04-8030-3dd990479ccb",
+      "environments": {
+        "a90e0d1f-6e61-493c-9aa2-5711dd650aab": {
+          "name": "Python environment",
+          "model": {
+            "model_type": "docplex",
+            "model_version": "22.1",
+            "python_version": "3.10",
+            "id": "70bc8c0d-3725-469b-8c3f-b34aaadaac10",
+            "space_id": "96a05454-0584-4b04-8030-3dd990479ccb",
+            "modified_at": "2023-10-23T09:40:51.916Z"
+          },
+          "default_environment": true,
+          "id": "a90e0d1f-6e61-493c-9aa2-5711dd650aab",
+          "extension": {},
+          "deployment": {
+            "id": "7fbd7665-2f3d-4ea8-9990-cb18e2c3c150",
+            "space_id": "96a05454-0584-4b04-8030-3dd990479ccb",
+            "modified_at": "2023-10-23T09:40:52.155Z",
+            "hardware_spec_name": "S",
+            "hardware_spec_nodes": 1
+          },
+          "status": {
+            "state": "active",
+            "more_info": "",
+            "modified_at": "2023-10-23T09:40:53.578Z",
+            "ping_at": "2023-10-23T09:40:53.578Z"
+          },
+          "modified_at": "2023-10-23T09:40:51.805Z",
+          "modified_by": "1000330999"
+        }
+      },
+      "extensions": {}
+    }
+  },
+  "attachments": []
+}

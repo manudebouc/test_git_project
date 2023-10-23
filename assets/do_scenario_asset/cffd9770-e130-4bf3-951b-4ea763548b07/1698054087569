@@ -1,0 +1,20 @@
+[2023-10-23T09:41:26.953Z, WARNING] Python 3.10 is used as default with pandas 1.5.3 libraries.
+[2023-10-23T09:41:27.069Z, INFO] {'diet_food.csv': {'name': 'str'}, 'diet_food_nutrients.csv': {'Food': 'str'}, 'diet_nutrients.csv': {'name': 'str'}}
+[2023-10-23T09:41:27.185Z, INFO] hello from script 2!
+[2023-10-23T09:41:27.187Z, INFO] CPLEX version 22.1.1.0
+[2023-10-23T09:41:27.188Z, INFO] Python version 3.10.13 (main, Sep 11 2023, 13:21:10) [GCC 11.2.0]
+[2023-10-23T09:41:27.456Z, INFO] Model: diet
+[2023-10-23T09:41:27.458Z, INFO]  - number of variables: 9
+[2023-10-23T09:41:27.459Z, INFO]    - binary=0, integer=0, continuous=9
+[2023-10-23T09:41:27.460Z, INFO]  - number of constraints: 7
+[2023-10-23T09:41:27.460Z, INFO]    - linear=7
+[2023-10-23T09:41:27.461Z, INFO]  - parameters: defaults
+[2023-10-23T09:41:27.462Z, INFO]  - objective: minimize
+[2023-10-23T09:41:27.463Z, INFO]  - problem type is: LP
+[2023-10-23T09:41:27.463Z, INFO] Warning: Model: "diet" is not a MIP problem, progress listeners are disabled
+[2023-10-23T09:41:27.477Z, INFO] objective: 2.690
+[2023-10-23T09:41:27.477Z, INFO] status: OPTIMAL_SOLUTION(2)
+[2023-10-23T09:41:27.479Z, INFO]   "Spaghetti W/ Sauce"=2.155
+[2023-10-23T09:41:27.487Z, INFO]   "Chocolate Chip Cookies"=10.000
+[2023-10-23T09:41:27.489Z, INFO]   "Lowfat Milk"=1.831
+[2023-10-23T09:41:27.490Z, INFO]   "Hotdog"=0.930
